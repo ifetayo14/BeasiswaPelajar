@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".BeasiswaActivity">
+    tools:context=".SavedBeasiswaActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_beasiswa"
+        android:id="@+id/rv_saved"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />

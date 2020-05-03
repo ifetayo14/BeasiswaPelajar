@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    android:background="@drawable/gradient">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/beasiswaBtn"
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/dashboard_beasiswa_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:text="Beasiswa"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/savedBtn"
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/dashboard_saved_button"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:text="Saved"/>
+
+        <Button
+            android:id="@+id/appliedBtn"
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@drawable/dashboard_applied_button"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:text="Applied"/>
+
+        <Button
+            android:id="@+id/profileBtn"
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@drawable/dashboard_profile_button"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:text="Profile"/>
+    </GridLayout>
+</RelativeLayout>

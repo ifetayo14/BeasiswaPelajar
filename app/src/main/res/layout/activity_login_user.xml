@@ -94,6 +94,7 @@
         android:padding="10dp"
         android:background="@drawable/roundedcorner"
         android:layout_centerHorizontal="true"/>
+
     <Button
         android:id="@+id/loginSiswa"
         android:layout_width="wrap_content"
@@ -104,6 +105,7 @@
         android:background="@drawable/roundedbutton"
         android:text="@string/masuk"
         android:layout_centerHorizontal="true"/>
+
     <TextView
         android:id="@+id/lupapassword"
         android:layout_width="wrap_content"

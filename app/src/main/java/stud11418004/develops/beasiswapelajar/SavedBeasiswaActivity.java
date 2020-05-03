@@ -8,7 +8,8 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class BeasiswaActivity extends AppCompatActivity {
+public class SavedBeasiswaActivity extends AppCompatActivity {
+
     private RecyclerView rvView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -18,12 +19,13 @@ public class BeasiswaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beasiswa);
+        setContentView(R.layout.activity_beasiswa_saved);
+
         dataTitle = new ArrayList<>();
         dataDesc = new ArrayList<>();
         initDataset();
 
-        rvView = (RecyclerView) findViewById(R.id.rv_beasiswa);
+        rvView = (RecyclerView) findViewById(R.id.rv_saved);
         rvView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(this);
@@ -31,7 +33,6 @@ public class BeasiswaActivity extends AppCompatActivity {
 
         adapter = new AdapterBeasiswa(dataTitle, dataDesc);
         rvView.setAdapter(adapter);
-
     }
 
     private void initDataset(){
@@ -66,5 +67,4 @@ public class BeasiswaActivity extends AppCompatActivity {
         dataDesc.add("Deskripsi Beasiswa");
 
     }
-
 }
