@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Beasiswa Pelajar</string>
+    <string name="beasiswapelajar">BEASISWA PELAJAR</string>
+    <string name="login">LOGIN</string>
+    <string name="siswa">SISWA</string>
+    <string name="donatur">DONATUR</string>
+    <string name="admin">ADMIN</string>
+    <string name="masuk">Masuk</string>
+    <string name="lupapassword"><u><font color="#1C0DF6"></font>Lupa Password?</u></string>
+    <string name="tidakpunyaakun">Tidak punya akun? </string>
+    <string name="buatakun"><u><font color="#1C0DF6"></font> Buat akun</u></string>
+    <string name="daftarakun">DAFTAR AKUN</string>
+    <string name="sudahpunyaakun">Sudah punya akun? </string>
+    <string name="masukakun"><u><font color="#1C0DF6"></font> Masuk</u></string>
+</resources>
