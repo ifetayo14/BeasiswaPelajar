@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".LoginUserActivity">
+    tools:context=".LoginDonatur">
+
     <TextView
         android:id="@+id/TV1"
         android:layout_marginTop="89dp"
@@ -20,7 +21,7 @@
         android:layout_below="@id/TV1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="LOGIN DONATUR"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"/>
@@ -32,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/TV2">
         <TextView
-            android:id="@+id/siswa"
+            android:id="@+id/pelajar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/siswa"
@@ -141,5 +142,5 @@
             android:text="@string/buatakun"
             android:textSize="15sp"/>
     </LinearLayout>
-
+    
 </RelativeLayout>

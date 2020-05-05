@@ -9,8 +9,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DaftarDonatur"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".LoginAdmin"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".LoginDonatur"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".AppliedBeasiswaActivity"
-            android:label="beasiswa yang Didaftar"></activity>
+            android:label="beasiswa yang Didaftar" />
         <activity
             android:name=".SavedBeasiswaActivity"
             android:label="beasiswa yang Disimpan" />
@@ -21,10 +30,10 @@
             android:name=".Dashboard"
             android:label="Dashboard" />
         <activity
-            android:name=".DaftarUserActivity"
+            android:name=".DaftarPelajar"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".LoginUserActivity"
+            android:name=".LoginPelajar"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".SplashscreenActivity"
