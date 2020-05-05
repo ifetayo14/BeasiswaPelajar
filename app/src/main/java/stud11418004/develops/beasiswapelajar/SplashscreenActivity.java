@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
 
 public class SplashscreenActivity extends AppCompatActivity {
 
@@ -18,7 +17,7 @@ public class SplashscreenActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), LoginUserActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginPelajar.class));
             }
         }, 4000);
     }

@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:context=".DaftarUserActivity">
+        tools:context=".DaftarPelajar">
         <TextView
             android:id="@+id/TV1"
             android:layout_marginTop="41dp"
@@ -35,7 +35,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/TV2">
             <TextView
-                android:id="@+id/siswa"
+                android:id="@+id/pelajar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/siswa"
@@ -77,7 +77,7 @@
             android:ems="10"
             android:layout_marginTop="17dp"
             android:inputType="text"
-            android:hint="Universitas"
+            android:hint="Alamat"
             android:textColorHint="@color/grey"
             android:textColor="@color/black"
             android:layout_below="@id/namaSiswa"
