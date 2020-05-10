@@ -27,15 +27,15 @@ public class AdapterApplied extends RecyclerView.Adapter<AdapterApplied.ViewHold
 
         public ViewHolder(View v) {
             super(v);
-            tvTitle = (TextView) v.findViewById(R.id.tv_title_beasiswa);
-            tvSubtitle = (TextView) v.findViewById(R.id.tv_subtitle_beasiswa);
+            tvTitle = (TextView) v.findViewById(R.id.applied_title);
+            tvSubtitle = (TextView) v.findViewById(R.id.applied_desc);
         }
     }
 
     @NonNull
     @Override
     public AdapterApplied.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_beasiswa, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.applied_cardview, parent, false);
         AdapterApplied.ViewHolder vh = new AdapterApplied.ViewHolder(v);
         return vh;
     }

@@ -27,16 +27,16 @@ public class AdapterSaved extends RecyclerView.Adapter<AdapterSaved.ViewHolder> 
 
         public ViewHolder(View v) {
             super(v);
-            tvTitle = (TextView) v.findViewById(R.id.tv_title_beasiswa);
-            tvSubtitle = (TextView) v.findViewById(R.id.tv_subtitle_beasiswa);
+            tvTitle = (TextView) v.findViewById(R.id.saved_title);
+            tvSubtitle = (TextView) v.findViewById(R.id.saved_desc);
         }
     }
 
     @NonNull
     @Override
-    public AdapterSaved.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_beasiswa, parent, false);
-        AdapterSaved.ViewHolder vh = new AdapterSaved.ViewHolder(v);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.saved_cardview, parent, false);
+        ViewHolder vh = new ViewHolder(v);
         return vh;
     }
 

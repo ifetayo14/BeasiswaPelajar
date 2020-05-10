@@ -36,34 +36,34 @@ public class AppliedBeasiswaActivity extends AppCompatActivity {
 
     private void initDataset(){
         dataTitle.add("Beasiswa Tanoto");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Rajawali");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Bidik Misi");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Ikatan Dinas");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa LPJP");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Pertukaran Pelajar");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Cinta Anak");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Tobasa");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Djarum");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
         dataTitle.add("Beasiswa Bank Indonesia");
-        dataDesc.add("Deskripsi Beasiswa");
+        dataDesc.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur beatae deleniti dolor dolore doloremque illum, molestias necessitatibus omnis pariatur placeat quos, ratione repudiandae saepe sapiente tempora velit veritatis?");
 
     }
 
