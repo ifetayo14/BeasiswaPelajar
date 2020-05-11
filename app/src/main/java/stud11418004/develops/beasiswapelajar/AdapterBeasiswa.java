@@ -10,46 +10,43 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class AdapterBeasiswa extends RecyclerView.Adapter<AdapterBeasiswa.ViewHolder> {
-
-    private ArrayList<String> rvTitle;
-    private ArrayList<String> rvDesc;
-
-    public AdapterBeasiswa(ArrayList<String> inputTitle, ArrayList<String> inputDesc) {
-        rvTitle = inputTitle;
-        rvDesc = inputDesc;
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder {
-
-        public TextView tvTitle;
-        public TextView tvSubtitle;
-
-        public ViewHolder(View v) {
-            super(v);
-            tvTitle = (TextView) v.findViewById(R.id.beasiswa_title);
-            tvSubtitle = (TextView) v.findViewById(R.id.beasiswa_desc);
-        }
-    }
+public class AdapterBeasiswa extends RecyclerView.Adapter {
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.beasiswa_cardview, parent, false);
-        ViewHolder vh = new ViewHolder(v);
-        return vh;
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.beasiswa_cardview, parent, false);
+        return new ListViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterBeasiswa.ViewHolder holder, int position) {
-        final String title = rvTitle.get(position);
-        final String desc = rvDesc.get(position);
-        holder.tvTitle.setText(rvTitle.get(position));
-        holder.tvSubtitle.setText(rvDesc.get(position));
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        ((ListViewHolder) holder).bindView(position);
     }
 
     @Override
     public int getItemCount() {
-        return rvTitle.size();
+        return BeasiswaData.title.length;
+    }
+
+    private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        private TextView title;
+        private TextView desc;
+
+        public ListViewHolder(View view){
+            super(view);
+            title = view.findViewById(R.id.beasiswa_title);
+            desc = view.findViewById(R.id.beasiswa_desc);
+            view.setOnClickListener(this);
+        }
+
+        public void bindView(int position){
+            title.setText(BeasiswaData.title[position]);
+            desc.setText(BeasiswaData.desc[position]);
+        }
+
+        public void onClick(View view){
+
+        }
     }
 }

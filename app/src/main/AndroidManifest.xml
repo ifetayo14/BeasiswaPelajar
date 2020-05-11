@@ -8,18 +8,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".AppliedBeasiswaActivity"
-            android:label="beasiswa yang Didaftar"></activity>
-        <activity
-            android:name=".SavedBeasiswaActivity"
-            android:label="beasiswa yang Disimpan" />
-        <activity
-            android:name=".BeasiswaActivity"
-            android:label="Beasiswa yang Direkomendasikan" />
-        <activity
-            android:name=".Dashboard"
-            android:label="Dashboard" />
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".DaftarUserActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
