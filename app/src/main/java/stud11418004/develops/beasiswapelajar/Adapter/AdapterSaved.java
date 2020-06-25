@@ -1,4 +1,4 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import stud11418004.develops.beasiswapelajar.Entity.BeasiswaData;
+import stud11418004.develops.beasiswapelajar.R;
 
 public class AdapterSaved extends RecyclerView.Adapter{
 

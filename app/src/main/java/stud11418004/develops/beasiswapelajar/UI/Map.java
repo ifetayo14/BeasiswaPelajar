@@ -1,4 +1,4 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+
+import stud11418004.develops.beasiswapelajar.R;
 
 public class Map extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 

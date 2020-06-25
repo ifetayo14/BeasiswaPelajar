@@ -1,4 +1,4 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -16,6 +16,12 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+
+import stud11418004.develops.beasiswapelajar.Fragment.FragmentApplied;
+import stud11418004.develops.beasiswapelajar.Fragment.FragmentBeasiswa;
+import stud11418004.develops.beasiswapelajar.Fragment.FragmentProfile;
+import stud11418004.develops.beasiswapelajar.Fragment.FragmentSaved;
+import stud11418004.develops.beasiswapelajar.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 

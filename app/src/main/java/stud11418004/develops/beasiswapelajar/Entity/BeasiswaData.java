@@ -1,4 +1,4 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.Entity;
 
 public class BeasiswaData {
     public static String[] title = new String[]{

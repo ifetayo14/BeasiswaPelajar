@@ -1,4 +1,4 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,17 +10,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import stud11418004.develops.beasiswapelajar.Adapter.AdapterSaved;
+import stud11418004.develops.beasiswapelajar.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentApplied extends Fragment {
+public class FragmentSaved extends Fragment {
 
     private RecyclerView.Adapter adapter;
 
-    public FragmentApplied() {
+    public FragmentSaved() {
         // Required empty public constructor
     }
 
@@ -29,10 +30,10 @@ public class FragmentApplied extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        RelativeLayout rootView = (RelativeLayout) inflater.inflate(R.layout.fragment_applied, container, false);
+        RelativeLayout rootView = (RelativeLayout) inflater.inflate(R.layout.fragment_saved, container, false);
 
-        RecyclerView recyclerView = rootView.findViewById(R.id.rv_applied);
-        adapter = new AdapterApplied();
+        RecyclerView recyclerView = rootView.findViewById(R.id.rv_saved);
+        adapter = new AdapterSaved();
         recyclerView.setAdapter(adapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
