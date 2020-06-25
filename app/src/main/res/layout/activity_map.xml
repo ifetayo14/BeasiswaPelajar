@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#0c056d"
     android:fitsSystemWindows="true"
-    tools:context=".Map">
+    tools:context=".UI.Map">
 
     <LinearLayout
         android:layout_width="match_parent"

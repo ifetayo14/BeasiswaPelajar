@@ -1,11 +1,12 @@
-package stud11418004.develops.beasiswapelajar;
+package stud11418004.develops.beasiswapelajar.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
+
+import stud11418004.develops.beasiswapelajar.R;
 
 public class SplashscreenActivity extends AppCompatActivity {
 
