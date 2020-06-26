@@ -45,12 +45,6 @@ public class FragmentBeasiswa extends Fragment {
 
         RelativeLayout rootView = (RelativeLayout) inflater.inflate(R.layout.fragment_beasiswa, container, false);
 
-//        RecyclerView recyclerView = rootView.findViewById(R.id.rv_beasiswa);
-//        adapter = new AdapterBeasiswa();
-//        recyclerView.setAdapter(adapter);
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-//        recyclerView.setLayoutManager(layoutManager);
-
         return rootView;
     }
 

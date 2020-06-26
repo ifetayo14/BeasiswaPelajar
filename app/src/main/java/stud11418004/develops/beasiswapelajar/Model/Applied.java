@@ -1,9 +1,9 @@
 package stud11418004.develops.beasiswapelajar.Model;
 
-public class Saved {
+public class Applied {
     private String nama, deskripsi;
 
-    public Saved(String nama, String deskripsi) {
+    public Applied(String nama, String deskripsi) {
         this.nama = nama;
         this.deskripsi = deskripsi;
     }

@@ -6,12 +6,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import stud11418004.develops.beasiswapelajar.API.APIClient;
+import stud11418004.develops.beasiswapelajar.Adapter.AdapterBeasiswa;
 import stud11418004.develops.beasiswapelajar.Adapter.AdapterSaved;
+import stud11418004.develops.beasiswapelajar.Model.Saved;
 import stud11418004.develops.beasiswapelajar.R;
+import stud11418004.develops.beasiswapelajar.Response.SavedResponse;
 
 
 /**
@@ -19,7 +30,9 @@ import stud11418004.develops.beasiswapelajar.R;
  */
 public class FragmentSaved extends Fragment {
 
-    private RecyclerView.Adapter adapter;
+    private RecyclerView recyclerView;
+    private AdapterSaved adapter;
+    private List<Saved> savedList;
 
     public FragmentSaved() {
         // Required empty public constructor
@@ -32,12 +45,30 @@ public class FragmentSaved extends Fragment {
 
         RelativeLayout rootView = (RelativeLayout) inflater.inflate(R.layout.fragment_saved, container, false);
 
-        RecyclerView recyclerView = rootView.findViewById(R.id.rv_saved);
-        adapter = new AdapterSaved();
-        recyclerView.setAdapter(adapter);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
-
         return rootView;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        recyclerView = view.findViewById(R.id.rv_saved);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        Call<SavedResponse> call = APIClient.getInstance().getAPI().getAllSaved();
+
+        call.enqueue(new Callback<SavedResponse>() {
+            @Override
+            public void onResponse(Call<SavedResponse> call, Response<SavedResponse> response) {
+                savedList = response.body().getSavedList();
+                adapter = new AdapterSaved(getContext(), savedList);
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<SavedResponse> call, Throwable t) {
+
+            }
+        });
     }
 }

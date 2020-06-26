@@ -5,10 +5,12 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import stud11418004.develops.beasiswapelajar.Response.AppliedResponse;
 import stud11418004.develops.beasiswapelajar.Response.BeasiswaResponse;
 import stud11418004.develops.beasiswapelajar.Response.DefaultResponse;
 import stud11418004.develops.beasiswapelajar.Response.LoginResponse;
 import stud11418004.develops.beasiswapelajar.Response.MahasiswaResponse;
+import stud11418004.develops.beasiswapelajar.Response.SavedResponse;
 
 public interface APIServices {
 
@@ -38,5 +40,11 @@ public interface APIServices {
 
     @GET("allBeasiswa")
     Call<BeasiswaResponse> getAllBeasiswa();
+
+    @GET("allSaved")
+    Call<SavedResponse> getAllSaved();
+
+    @GET("allApplied")
+    Call<AppliedResponse> getAllApplied();
 
 }
