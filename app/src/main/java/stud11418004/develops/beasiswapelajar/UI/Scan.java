@@ -21,7 +21,6 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.huawei.hms.ml.scan.HmsScan;
 
-import stud11418004.develops.beasiswapelajar.DefinedActivity;
 import stud11418004.develops.beasiswapelajar.R;
 
 public class Scan extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

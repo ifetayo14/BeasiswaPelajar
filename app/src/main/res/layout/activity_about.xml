@@ -5,14 +5,16 @@
     android:id="@+id/drawer_layout_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f25d9c"
-    android:fitsSystemWindows="true"
-    tools:context=".UI.About">
 
-    <LinearLayout
+    android:fitsSystemWindows="true"
+    tools:context="UI.About">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarAbout"
@@ -23,23 +25,92 @@
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        <RelativeLayout
-            android:id="@+id/placeholder"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/yepta"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="54dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yepta Samosir"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/profile_image"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/alvin"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="54dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alvin Simbolon"
+            android:layout_below="@id/profile_image"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="15dp"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="ABOUT"
-                android:textSize="20sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/tine"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
 
-        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="232dp"
+            android:text="Christine Hutajulu"
+            android:textSize="15dp" />
 
-    </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/saut"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="228dp"
+            android:text="Saut Sihotang"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:text="Aplikasi ini dibuat oleh kelompok 11 PAM 42TRPL IT DEL"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view_about"

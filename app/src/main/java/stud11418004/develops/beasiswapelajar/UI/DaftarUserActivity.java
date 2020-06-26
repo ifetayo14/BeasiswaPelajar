@@ -138,6 +138,8 @@ public class DaftarUserActivity extends AppCompatActivity {
 
                 } else if (response.code() == 422) {
                     Toast.makeText(DaftarUserActivity.this, "Registrasi Berhasil.", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(DaftarUserActivity.this, LoginUserActivity.class);
+                    startActivity(intent);
                 }
             }
 
