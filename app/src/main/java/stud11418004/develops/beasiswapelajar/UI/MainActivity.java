@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intentHome);
                 break;
             case R.id.map:
-                Intent intentMap = new Intent(MainActivity.this, Map.class);
+                Intent intentMap = new Intent(MainActivity.this, Scan.class);
                 startActivity(intentMap);
                 break;
             case R.id.about:

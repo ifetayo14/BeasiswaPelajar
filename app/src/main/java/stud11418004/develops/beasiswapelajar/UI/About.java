@@ -44,7 +44,7 @@ public class About extends AppCompatActivity implements NavigationView.OnNavigat
                 startActivity(intentHome);
                 break;
             case R.id.map:
-                Intent intentMap = new Intent(About.this, Map.class);
+                Intent intentMap = new Intent(About.this, Scan.class);
                 startActivity(intentMap);
                 break;
             case R.id.about:
